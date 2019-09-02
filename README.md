@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Propósito general del proyecto
 
-## Available Scripts
+Un sistema POS o Point Of Sale en este contexto hace referencia a aplicaciones y software destinado a la sistematización
+del control de ventas e inventarios de un negocio.
 
-In the project directory, you can run:
+El objetivo de este sistema es mantener el inventario actualizado de acuerdo con las ventas e ingreso de productos al 
+negocio, optimizar el proceso de facturación para agilizar y mejorar los procesos de negocio, llevar el control de 
+gastos e ingresos del negocio.
 
-### `npm start`
+## Alcance del Proyecto:
+### Pantallas mínimas que deben ser implementadas
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Pantalla de Sign in / Sign up / Logout , agregar opción de registro y login con redes sociales
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+2. Pantalla de generación de facturas.
 
-### `npm test`
+3. Pantalla de Gestión del inventario.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Pantalla de Reportes, administración y gestión de gastos.
 
-### `npm run build`
+- __Flujo esperado__
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    1. El cliente llega al punto de venta para realizar el pago de sus productos.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+    2. El cajero toma los datos del cliente, en caso de que el cliente no exista debe registrarlo como cliente frecuente
+     para futuras compras. 
+     Si el cliente ya existe debe seleccionarlo.
+     En caso de ser necesario el cajero u operador del sistema POS debe poder editar los datos del cliente.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    3. El operador del sistema POS selecciona en el sistema cada producto a comprar.
 
-### `npm run eject`
+    4. El sistema valida la existencia del producto en el inventario.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    5. Calcular el costo total de la venta.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    6. Se registra el pago y los datos son guardados en el sistema.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    7. Se genera la factura
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- __El usuario administrador puede:__
 
-## Learn More
+    1. Revisar el total de ventas en un periodo de tiempo.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    2. Validar el inventario.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    3. El sistema debe generar alertas sobre productos elegidos para informar que se están agotando.
 
-### Code Splitting
+    4. Agregar, modificar, eliminar productos del inventario.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+    5. Generar reportes periodicos sobre ingresos y egresos de productos del inventario.
 
-### Analyzing the Bundle Size
+    6. Administrar las listas de precios, modificar, agregar o eliminar precios a los productos.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+    7. Consultar facturas asociadas a usuarios.
