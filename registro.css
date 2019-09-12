@@ -1,0 +1,99 @@
+/*AZUL OBSCURO : #0D3F67
+MORADO : #6B48FF
+VERDE : #1EE3CF
+GRIS : #F2F4F6*/
+
+body {
+    margin: 0;
+    font-family: 'Muli', sans-serif;
+}
+
+/*Mobile*/
+@media (max-width: 425px) {
+
+    .register {
+        background: linear-gradient(#6B48FF, #1EE3CF);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .register__container {
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+        min-height: 800px;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .register__container--form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .register__container--form label {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .input {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid white;
+        border-radius: 25px;
+        color: white;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        height: 50px;
+        padding: 0 20px;
+        outline: none;
+    }
+
+    input::placeholder {
+        color: white;
+    }
+
+    .button {
+        background-color: rgba(255, 255, 255, 0.4);
+        border: none;
+        border-radius: 25px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Muli', sans-serif;
+        height: 50px;
+        letter-spacing: 1px;
+        margin: 1px 0;
+    }
+
+    .register__container--login {
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .register__container--login a {
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+
+    .register__container--login a:hover {
+        text-decoration: underline;
+    }
+
+}
+
+/*Tablet*/
+@media (min-width: 426px) and (max-width: 768px) {
+
+}
+
+/*Laptop*/
+@media (min-width: 769px) and (max-width: 1440px) {
+    
+}
